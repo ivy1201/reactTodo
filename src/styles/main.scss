@@ -1,0 +1,55 @@
+
+.container{
+    width: 400px;
+    .todoHeader,
+    .searchBox{
+        input{
+            width:400px;
+            height: 25px;
+            border:1px solid #ddd;
+        }
+        input:focus {
+            background-color: #778899
+        }
+    }
+}
+.mainContent{
+    margin-left: 0px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+        padding: 0px;
+        li{
+            border-bottom:1px solid #ddd;
+            list-style: none;
+            height: 30px;
+            display: flex;
+            vertical-align: center;
+            label {
+                flex: 1;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+            button {
+                flex: 0 0 50px;
+                background: #e0fff;
+            }
+            button:hover {
+                background: #ff4500;
+            }
+        }
+
+        li:before {
+            content: initial;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+
+}
+.todoFooter{
+    display: flex;
+    button {
+        flex: 0 0 100px;
+        background: #e0fff;
+    }
+}
